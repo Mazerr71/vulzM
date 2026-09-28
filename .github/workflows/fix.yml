@@ -1,0 +1,35 @@
+name: Fix and check
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cari fabric.mod.json
+        run: |
+          echo "=== Semua fabric.mod.json di repo ==="
+          find . -name "fabric.mod.json" -not -path "./.git/*"
+          echo "=== Isi src/main/resources ==="
+          find src/main/resources -type f 2>/dev/null || echo "folder resources tidak ada"
+          echo "=== Isi root ==="
+          ls
+      - name: Pindahkan file yang nyasar ke resources
+        run: |
+          mkdir -p src/main/resources
+          for f in fabric.mod.json en_us.json id_id.json logo.png; do
+            if [ -f "$f" ]; then git mv "$f" src/main/resources/; fi
+          done
+          if [ -f src/main/resources/fabric.mod.json ]; then
+            echo "=== Isi fabric.mod.json ==="
+            cat src/main/resources/fabric.mod.json
+          else
+            echo "!!! fabric.mod.json TIDAK ADA di src/main/resources"
+          fi
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git commit -m "Fix resources location" || echo "nothing to commit"
+          git push
