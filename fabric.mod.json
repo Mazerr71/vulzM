@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "vulzm",
+  "version": "${version}",
+  "name": "vulzM",
+  "description": "vulzM - client mod bertema Volcanic/Magma untuk Fabric 1.21.11. Modul HUD, Visual, dan Movement dengan Mod Menu bergaya obsidian & lava, dibuka lewat Right Shift, lengkap dengan HUD Editor drag-and-drop.",
+  "authors": [
+    "vulzM"
+  ],
+  "contact": {
+    "homepage": "https://example.com/vulzm",
+    "issues": "https://example.com/vulzm/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/vulzm/textures/gui/logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.vulzm.vulzm.client.VulzMClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}

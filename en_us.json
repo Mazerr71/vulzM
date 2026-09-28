@@ -1,0 +1,46 @@
+{
+  "key.category.vulzm.main": "vulzM",
+  "key.vulzm.open_menu": "Open vulzM Menu",
+
+  "gui.vulzm.home.title": "vulzM",
+  "gui.vulzm.home.tagline": "Forged in magma",
+  "gui.vulzm.home.mod_menu": "Mod Menu",
+  "gui.vulzm.home.hud_editor": "HUD Editor",
+
+  "gui.vulzm.mod_menu.title": "Mod Menu",
+  "gui.vulzm.mod_menu.hint": "Click a card to toggle  -  '...' opens settings  -  Esc to close",
+  "gui.vulzm.mod_menu.empty": "No modules found.",
+  "gui.vulzm.mod_menu.crashed": "Disabled (error)",
+
+  "gui.vulzm.state.on": "ON",
+  "gui.vulzm.state.off": "OFF",
+
+  "gui.vulzm.settings.title": "Module Settings",
+  "gui.vulzm.settings.back": "Back",
+
+  "gui.vulzm.hud_editor.title": "HUD Editor",
+  "gui.vulzm.hud_editor.help": "Drag a HUD element to move it  -  select, then use - / + to resize",
+  "gui.vulzm.hud_editor.done": "Done",
+  "gui.vulzm.hud_editor.smaller": "-",
+  "gui.vulzm.hud_editor.bigger": "+",
+  "gui.vulzm.hud_editor.reset": "Reset",
+
+  "category.vulzm.all": "All",
+  "category.vulzm.hud": "HUD",
+  "category.vulzm.visual": "Visual",
+  "category.vulzm.movement": "Movement",
+
+  "module.vulzm.fps": "FPS Display",
+  "module.vulzm.coordinates": "Coordinates",
+  "module.vulzm.cps": "CPS Counter",
+  "module.vulzm.ping": "Ping Display",
+  "module.vulzm.direction": "Direction",
+  "module.vulzm.armor": "Armor Status",
+  "module.vulzm.fullbright": "Fullbright",
+  "module.vulzm.zoom": "Zoom (hold C)",
+  "module.vulzm.auto_sprint": "Auto Sprint",
+
+  "setting.vulzm.hud.background_opacity": "Background Opacity",
+  "setting.vulzm.coords.decimals": "Show Decimals",
+  "setting.vulzm.zoom.fov": "Zoom FOV"
+}

@@ -1,0 +1,46 @@
+{
+  "key.category.vulzm.main": "vulzM",
+  "key.vulzm.open_menu": "Buka Menu vulzM",
+
+  "gui.vulzm.home.title": "vulzM",
+  "gui.vulzm.home.tagline": "Ditempa dalam magma",
+  "gui.vulzm.home.mod_menu": "Menu Mod",
+  "gui.vulzm.home.hud_editor": "Editor HUD",
+
+  "gui.vulzm.mod_menu.title": "Menu Mod",
+  "gui.vulzm.mod_menu.hint": "Klik kartu untuk toggle  -  '...' buka pengaturan  -  Esc untuk tutup",
+  "gui.vulzm.mod_menu.empty": "Tidak ada modul.",
+  "gui.vulzm.mod_menu.crashed": "Nonaktif (error)",
+
+  "gui.vulzm.state.on": "AKTIF",
+  "gui.vulzm.state.off": "MATI",
+
+  "gui.vulzm.settings.title": "Pengaturan Modul",
+  "gui.vulzm.settings.back": "Kembali",
+
+  "gui.vulzm.hud_editor.title": "Editor HUD",
+  "gui.vulzm.hud_editor.help": "Seret elemen HUD untuk memindahkan  -  pilih lalu pakai - / + untuk ubah ukuran",
+  "gui.vulzm.hud_editor.done": "Selesai",
+  "gui.vulzm.hud_editor.smaller": "-",
+  "gui.vulzm.hud_editor.bigger": "+",
+  "gui.vulzm.hud_editor.reset": "Reset",
+
+  "category.vulzm.all": "Semua",
+  "category.vulzm.hud": "HUD",
+  "category.vulzm.visual": "Visual",
+  "category.vulzm.movement": "Gerakan",
+
+  "module.vulzm.fps": "Tampilan FPS",
+  "module.vulzm.coordinates": "Koordinat",
+  "module.vulzm.cps": "Penghitung CPS",
+  "module.vulzm.ping": "Tampilan Ping",
+  "module.vulzm.direction": "Arah",
+  "module.vulzm.armor": "Status Armor",
+  "module.vulzm.fullbright": "Fullbright",
+  "module.vulzm.zoom": "Zoom (tahan C)",
+  "module.vulzm.auto_sprint": "Auto Sprint",
+
+  "setting.vulzm.hud.background_opacity": "Opasitas Latar",
+  "setting.vulzm.coords.decimals": "Tampilkan Desimal",
+  "setting.vulzm.zoom.fov": "FOV Zoom"
+}
