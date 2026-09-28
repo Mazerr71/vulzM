@@ -1,0 +1,27 @@
+name: Organize files
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Move files
+        run: |
+          for f in *.java; do
+            pkg=$(grep -m1 '^package ' "$f" | sed 's/package //; s/;//; s/\r//; s/ //g')
+            dir="src/main/java/$(echo "$pkg" | tr . /)"
+            mkdir -p "$dir"
+            git mv "$f" "$dir/"
+          done
+          mkdir -p src/main/resources
+          for f in fabric.mod.json en_us.json id_id.json logo.png; do
+            [ -f "$f" ] && git mv "$f" src/main/resources/
+          done
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git commit -m "Organize files into src structure" || echo "nothing to commit"
+          git push
